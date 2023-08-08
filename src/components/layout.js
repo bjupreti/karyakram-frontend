@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Link from "next/link";
+import Head from "next/head";
 
 export default function Layout({ children }) {
   return (
@@ -9,14 +9,20 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="favicon" href="/favicon.ico" />
       </Head>
-      <div className='navbar'>
-        <Link prefetch={false} href='/'>Home</Link>
-        <Link prefetch={false} href='/calendar'>Calendar</Link>
-        <Link prefetch={false} href='/about'>About</Link>
+      <div className="navbar">
+        <Link prefetch={false} href="/">
+          Home
+        </Link>
+        <span>&nbsp;&nbsp;</span>
+        <Link prefetch={false} href="/calendar">
+          Calendar
+        </Link>
+        <span>&nbsp;&nbsp;</span>
+        <Link prefetch={false} href="/about">
+          About
+        </Link>
       </div>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </>
-  )
+  );
 }

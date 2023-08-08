@@ -1,9 +1,5 @@
-import Layout from '@/components/layout'
+import Layout from "@/components/layout";
 
 export default function HomePage() {
-  return (
-    <Layout>
-      Welcome! Click the links above
-    </Layout>
-  )
+  return <Layout>Welcome! Click the links above</Layout>;
 }
